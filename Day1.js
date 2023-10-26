@@ -43,15 +43,13 @@ console.log(person);
 
 //Q7
 
+var Cricketer={
+  name:"piran",
+  country:"Srilanka",
+  isPlayer: true,
 
-
-
-
-
-
-
-
-
+}
+console.log("name" in Player);
 
 
 //Q8
@@ -62,13 +60,13 @@ console.log(student,course);
 
 //Q9
 
-const propertyToCheck = "address";
+// const propertyToCheck = "address";
 
-if (propertyToCheck.it is correct) {
-  console.log();
-} else {
-  console.log(`${propertyToCheck} not found`);
-}
+// if (propertyToCheck.it is correct) {
+//   console.log();
+// } else {
+//   console.log(`${propertyToCheck} not found`);
+// }
 
 
 
