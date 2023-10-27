@@ -1,24 +1,31 @@
 //Q1
-let obj= [];
+let obj= {};
 console.log(obj);
 
 //Q2
 let person={
 name:  "Piran",
-age :23
- }
-console.log(person);
-
-
-
-
+age :23,
+introduceYou:function()
+{
+  console.log("hello,my name is"+" "+this.name)            //this is keyword in JS
+}
+ };
+person.introduceYou();
 
 //Q3
 
 
-let greetStudent="Piranavan"
+let oba={
+  greetStudent:function(student){
+console.log(
+  `Hello ${student.name} Welcome to the Coding School`);
+  }
+};
 
-console.log( "Hello"+" "+greetStudent+" "+"WelcometotheCodingSchool");
+oba.greetStudent({name:"sure"})
+
+
 
 
 //Q4
@@ -49,33 +56,45 @@ var Cricketer={
   isPlayer: true,
 
 }
-console.log("name" in Player);
+// console.log("name" in Cricketer);
+
+//hasOwn property
+console.log(Cricketer.hasOwnProperty("name"));
 
 
-//Q8
-let student="Piranavan";
-let course="Webdevelopment";
-// let studentcourse=student+course;
-console.log(student,course);
+//Q8     spread operator
+
+let student={name3:"Piranavan",
+               age:25       
+              };
+
+let course={   courseName: "Math",
+              courseCode: "MATH101"};
+
+              const studentCourse = {
+                ...student,
+                ...course,
+              };
+            
+              console.log(studentCourse);
 
 //Q9
 
-// const propertyToCheck = "address";
+var object={
+  name:"piran",
+  age:"23"
+}
+const propertyToCheck = "address";
 
-// if (propertyToCheck.it is correct) {
-//   console.log();
-// } else {
-//   console.log(`${propertyToCheck} not found`);
-// }
-
-
-
-
-
-
+if (person.hasOwnProperty(propertyToCheck)) {
+  console.log(`${propertyToCheck} is there: ${person[propertyToCheck]}`);
+} else {
+  console.log(`${propertyToCheck} not found`);
+}
 
 
-//Q10
+
+// Q10
 const book = {
     title: "The Great world",
     author: "Lokesh",
